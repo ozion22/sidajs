@@ -34,3 +34,37 @@
 .display-right{
     right: 0%;
 } 
+
+.accordion {
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: darkgray 1px;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover{
+    background-color: darkgray;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.accordion:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+.active:after {
+    content: "\2796"; 
+}
